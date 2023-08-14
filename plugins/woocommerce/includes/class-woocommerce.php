@@ -16,6 +16,7 @@ use Automattic\WooCommerce\Internal\Features\FeaturesController;
 use Automattic\WooCommerce\Internal\ProductAttributesLookup\DataRegenerator;
 use Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore;
 use Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\Register as ProductDownloadDirectories;
+use Automattic\WooCommerce\Internal\RegisterHooksInterface;
 use Automattic\WooCommerce\Internal\RestockRefundedItemsAdjuster;
 use Automattic\WooCommerce\Internal\Settings\OptionSanitizer;
 use Automattic\WooCommerce\Internal\Utilities\WebhookUtil;
@@ -261,6 +262,16 @@ final class WooCommerce {
 		$container->get( FeaturesController::class );
 		$container->get( WebhookUtil::class );
 		$container->get( Marketplace::class );
+
+		/**
+		 * These classes have a register method for attaching hooks.
+		 *
+		 * @var RegisterHooksInterface[] $hook_register_classes
+		 */
+		$hook_register_classes = $container->get( RegisterHooksInterface::class );
+		foreach ( $hook_register_classes as $hook_register_class ) {
+			$hook_register_class->register();
+		}
 	}
 
 	/**
@@ -317,7 +328,7 @@ final class WooCommerce {
 		$this->define( 'WC_LOG_DIR', $upload_dir['basedir'] . '/wc-logs/' );
 		$this->define( 'WC_SESSION_CACHE_GROUP', 'wc_session_id' );
 		$this->define( 'WC_TEMPLATE_DEBUG_MODE', false );
-		
+
 		// These three are kept defined for compatibility, but are no longer used.
 		$this->define( 'WC_NOTICE_MIN_PHP_VERSION', '7.2' );
 		$this->define( 'WC_NOTICE_MIN_WP_VERSION', '5.2' );

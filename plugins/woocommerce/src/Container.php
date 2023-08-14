@@ -106,7 +106,7 @@ final class Container {
 	 *
 	 * @return mixed Entry.
 	 */
-	public function get( string $id ): object {
+	public function get( string $id ) {
 		return $this->container->get( $id );
 	}
 

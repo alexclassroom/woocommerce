@@ -1,0 +1,3 @@
+Oh and also <?php echo $this->also; ?>!
+By the way: <?php $this->render('resubthing', ['also' => 'marmalade']); ?>
+Did I say <?php echo $this->also; ?>?

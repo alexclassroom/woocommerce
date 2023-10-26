@@ -1,0 +1,2 @@
+Subblockie says: <?php $this->render_block("blockie"); ?>
+

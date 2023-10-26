@@ -8,30 +8,32 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * A class of utilities for dealing with strings.
  */
-final class StringUtil {
+final class StringUtil
+{
 
 	/**
 	 * Checks to see whether or not a string starts with another.
 	 *
 	 * @param string $string The string we want to check.
 	 * @param string $starts_with The string we're looking for at the start of $string.
-	 * @param bool   $case_sensitive Indicates whether the comparison should be case-sensitive.
+	 * @param bool $case_sensitive Indicates whether the comparison should be case-sensitive.
 	 *
 	 * @return bool True if the $string starts with $starts_with, false otherwise.
 	 */
-	public static function starts_with( string $string, string $starts_with, bool $case_sensitive = true ): bool {
-		$len = strlen( $starts_with );
-		if ( $len > strlen( $string ) ) {
+	public static function starts_with(string $string, string $starts_with, bool $case_sensitive = true): bool
+	{
+		$len = strlen($starts_with);
+		if ($len > strlen($string)) {
 			return false;
 		}
 
-		$string = substr( $string, 0, $len );
+		$string = substr($string, 0, $len);
 
-		if ( $case_sensitive ) {
-			return strcmp( $string, $starts_with ) === 0;
+		if ($case_sensitive) {
+			return strcmp($string, $starts_with) === 0;
 		}
 
-		return strcasecmp( $string, $starts_with ) === 0;
+		return strcasecmp($string, $starts_with) === 0;
 	}
 
 	/**
@@ -39,23 +41,24 @@ final class StringUtil {
 	 *
 	 * @param string $string The string we want to check.
 	 * @param string $ends_with The string we're looking for at the end of $string.
-	 * @param bool   $case_sensitive Indicates whether the comparison should be case-sensitive.
+	 * @param bool $case_sensitive Indicates whether the comparison should be case-sensitive.
 	 *
 	 * @return bool True if the $string ends with $ends_with, false otherwise.
 	 */
-	public static function ends_with( string $string, string $ends_with, bool $case_sensitive = true ): bool {
-		$len = strlen( $ends_with );
-		if ( $len > strlen( $string ) ) {
+	public static function ends_with(string $string, string $ends_with, bool $case_sensitive = true): bool
+	{
+		$len = strlen($ends_with);
+		if ($len > strlen($string)) {
 			return false;
 		}
 
-		$string = substr( $string, -$len );
+		$string = substr($string, -$len);
 
-		if ( $case_sensitive ) {
-			return strcmp( $string, $ends_with ) === 0;
+		if ($case_sensitive) {
+			return strcmp($string, $ends_with) === 0;
 		}
 
-		return strcasecmp( $string, $ends_with ) === 0;
+		return strcasecmp($string, $ends_with) === 0;
 	}
 
 	/**
@@ -63,14 +66,15 @@ final class StringUtil {
 	 *
 	 * @param string $string The string we want to check.
 	 * @param string $contained The string we're looking for inside $string.
-	 * @param bool   $case_sensitive Indicates whether the comparison should be case-sensitive.
+	 * @param bool $case_sensitive Indicates whether the comparison should be case-sensitive.
 	 * @return bool True if $contained is contained inside $string, false otherwise.
 	 */
-	public static function contains( string $string, string $contained, bool $case_sensitive = true ): bool {
-		if ( $case_sensitive ) {
-			return false !== strpos( $string, $contained );
+	public static function contains(string $string, string $contained, bool $case_sensitive = true): bool
+	{
+		if ($case_sensitive) {
+			return false !== strpos($string, $contained);
 		} else {
-			return false !== stripos( $string, $contained );
+			return false !== stripos($string, $contained);
 		}
 	}
 
@@ -80,8 +84,9 @@ final class StringUtil {
 	 * @param string $plugin_file_path The path of the main plugin file (can be passed as __FILE__ from the plugin itself).
 	 * @return string The name of the plugin in the form 'directory/file.php'.
 	 */
-	public static function plugin_name_from_plugin_file( string $plugin_file_path ): string {
-		return basename( dirname( $plugin_file_path ) ) . DIRECTORY_SEPARATOR . basename( $plugin_file_path );
+	public static function plugin_name_from_plugin_file(string $plugin_file_path): string
+	{
+		return basename(dirname($plugin_file_path)) . DIRECTORY_SEPARATOR . basename($plugin_file_path);
 	}
 
 	/**
@@ -90,8 +95,9 @@ final class StringUtil {
 	 * @param string|null $value The string to check.
 	 * @return bool True if the string is null or is empty.
 	 */
-	public static function is_null_or_empty( ?string $value ) {
-		return is_null( $value ) || '' === $value;
+	public static function is_null_or_empty(?string $value)
+	{
+		return is_null($value) || '' === $value;
 	}
 
 	/**
@@ -101,8 +107,9 @@ final class StringUtil {
 	 * @param string|null $value The string to check.
 	 * @return bool True if the string is null, is empty, or contains only whitespace characters.
 	 */
-	public static function is_null_or_whitespace( ?string $value ) {
-		return is_null( $value ) || '' === $value || ctype_space( $value );
+	public static function is_null_or_whitespace(?string $value)
+	{
+		return is_null($value) || '' === $value || ctype_space($value);
 	}
 
 	/**
@@ -114,12 +121,13 @@ final class StringUtil {
 	 * @return string A parenthesized and comma-separated string generated from the values.
 	 * @throws \InvalidArgumentException Empty values array passed.
 	 */
-	public static function to_sql_list( array $values ) {
-		if ( empty( $values ) ) {
-			throw new \InvalidArgumentException( self::class_name_without_namespace( __CLASS__ ) . '::' . __FUNCTION__ . ': the values array is empty' );
+	public static function to_sql_list(array $values)
+	{
+		if (empty($values)) {
+			throw new \InvalidArgumentException(self::class_name_without_namespace(__CLASS__) . '::' . __FUNCTION__ . ': the values array is empty');
 		}
 
-		return '(' . implode( ',', $values ) . ')';
+		return '(' . implode(',', $values) . ')';
 	}
 
 	/**
@@ -128,9 +136,16 @@ final class StringUtil {
 	 * @param string $class_name The full class name.
 	 * @return string The class name without the namespace.
 	 */
-	public static function class_name_without_namespace( string $class_name ) {
+	public static function class_name_without_namespace(string $class_name)
+	{
 		// A '?:' would convert this to a one-liner, but WP coding standards disallow these :shrug:.
-		$result = substr( strrchr( $class_name, '\\' ), 1 );
+		$result = substr(strrchr($class_name, '\\'), 1);
 		return $result ? $result : $class_name;
+	}
+
+	public static function is_valid_date(string $date, $format = 'Y-m-d H:i:s')
+	{
+		$d = \DateTime::createFromFormat($format, $date);
+		return $d && $d->format($format) === $date;
 	}
 }

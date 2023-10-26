@@ -65,3 +65,11 @@ $GLOBALS['woocommerce'] = WC();
 if ( class_exists( \Automattic\Jetpack\Connection\Rest_Authentication::class ) ) {
 	\Automattic\Jetpack\Connection\Rest_Authentication::init();
 }
+
+add_filter('woocommerce_template_file_path', function($template_path, $template_name, $parent_template_path) {
+	if($template_path === null) {
+		$template_path = '/home/konamiman/MyTemplates/' . $template_name . '.template';
+	}
+	return $template_path;
+}, 10, 3);
+

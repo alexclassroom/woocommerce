@@ -1,0 +1,16 @@
+<?php $this->set_template_display_name("blockification"); ?>
+<?php $this->start_block("blockie"); ?>
+Hello, I'm blockie! And you are: <?php echo $this->myname;?>
+
+<?php $this->add_block('inlined', 'foos and bars inline'); ?>
+
+<?php $this->end_block(); ?>
+
+Well,
+<?php $this->render_block("blockie"); ?>
+<?php $this->render_block("blockie"); ?>
+<?php $this->render_block("inlined"); ?>
+
+I say.
+
+<?php $this->render("subblockies", []); ?>

@@ -1487,6 +1487,7 @@ class WC_Helper {
 				'product_name'   => $data['Name'],
 				'product_url'    => $data['PluginURI'],
 				'zip_slug'       => $data['slug'],
+				'documentation_url' => '',
 				'key_type'       => '',
 				'key_type_label' => '',
 				'lifetime'       => false,
@@ -1571,6 +1572,27 @@ class WC_Helper {
 		}
 		// Break the by-ref.
 		unset( $subscription );
+
+		// Make expired. Shows renew button.
+		$subscriptions_to_expire = [
+			'W00-5318f920-414f-ade4-a82a6c465cd2', // Bass
+		];
+
+		// Remove product key. Shows subscribe button.
+		$subscriptions_to_remove_licence = [
+			'W00-61a2c077-4dfc-8a1c-5b52bfc47cf0',
+		];
+
+		foreach ($subscriptions as &$subscription) {
+			if ( in_array( $subscription['product_key'], $subscriptions_to_expire, true ) ) {
+				$subscription['expired'] = true;
+				$subscription['expires'] = 100;
+			}
+
+			if ( in_array( $subscription['product_key'], $subscriptions_to_remove_licence, true ) ) {
+				$subscription['product_key'] = '';
+			}
+		}
 
 		return $subscriptions;
 	}

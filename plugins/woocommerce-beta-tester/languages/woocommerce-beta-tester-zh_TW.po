@@ -1,0 +1,459 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Beta Tester\n"
+"POT-Creation-Date: 2023-10-30 13:56-0700\n"
+"PO-Revision-Date: 2023-10-30 13:57-0700\n"
+"Last-Translator: Alex Lion <learnwithalex@gmail.com>\n"
+"Language-Team: Alex Lion <learnwithalex@gmail.com>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: woocommerce-beta-tester.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: api/api.php:28 api/live-branches/install.php:42
+msgid "Sorry, you cannot perform this action"
+msgstr "很抱歉，目前的登入身分沒有執行這項操作的權限。"
+
+#. translators: %s: Release version number
+#: includes/class-wc-beta-tester-admin-assets.php:45
+#, php-format
+msgid "Release of version %s"
+msgstr "%s 版發佈版本"
+
+#: includes/class-wc-beta-tester-admin-assets.php:53
+msgid "Please pick a WooCommerce version."
+msgstr "請選取 WooCommerce 版本。"
+
+#: includes/class-wc-beta-tester-admin-menus.php:74
+msgid ""
+"\n"
+"\n"
+"### Theme ###\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"### 佈景主題 ###\n"
+"\n"
+
+#. translators: 1: latest version
+#: includes/class-wc-beta-tester-admin-menus.php:79
+#: includes/class-wc-beta-tester-admin-menus.php:88
+#, php-format
+msgid " - %s is available"
+msgstr " - %s 版已可供下載安裝"
+
+#: includes/class-wc-beta-tester-admin-menus.php:82
+#: includes/class-wc-beta-tester-admin-menus.php:105
+msgid "Yes"
+msgstr "是"
+
+#: includes/class-wc-beta-tester-admin-menus.php:82
+msgid ""
+"No - If you are modifying WooCommerce on a parent theme that you did not "
+"build personally we recommend using a child theme."
+msgstr ""
+"否 - 如果為了 WooCommerce 而需要修改非自行開發的佈景主題，建議使用子佈景主題"
+"後再修改子佈景主題。"
+
+#: includes/class-wc-beta-tester-admin-menus.php:92
+#, php-format
+msgid ""
+"Parent theme name: %1$s\n"
+"Parent theme version: %2$s\n"
+"Parent theme author URL: %3$s\n"
+msgstr ""
+"上層佈景主題名稱: %1$s\n"
+"上層佈景主題版本: %2$s\n"
+"上層佈景主題開發者網址: %3$s\n"
+
+#: includes/class-wc-beta-tester-admin-menus.php:100
+#, php-format
+msgid ""
+"Name: %1$s\n"
+"Version: %2$s\n"
+"Author URL: %3$s\n"
+"Child Theme: %4$s\n"
+"WooCommerce Support: %5$s"
+msgstr ""
+"佈景主題名稱: %1$s\n"
+"版本: %2$s\n"
+"開發者網址: %3$s\n"
+"子佈景主題: %4$s\n"
+"是否支援 WooCommerce: %5$s"
+
+#: includes/class-wc-beta-tester-admin-menus.php:105
+msgid "Not declared"
+msgstr "未宣告"
+
+#: includes/class-wc-beta-tester-admin-menus.php:119
+msgid ""
+"\n"
+"\n"
+"### Plugins ###\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"### 外掛 ###\n"
+"\n"
+
+#. translators: %s: plugin latest version
+#: includes/class-wc-beta-tester-admin-menus.php:131
+#, php-format
+msgid "%s is available"
+msgstr "%s 版已可供下載安裝"
+
+#: includes/class-wc-beta-tester-admin-menus.php:135
+msgid "Network enabled"
+msgstr "多站網路已啟用"
+
+#: includes/class-wc-beta-tester-admin-menus.php:140
+msgid "Not tested with the active version of WooCommerce"
+msgstr "尚未與目前使用的 WooCommerce 進行測試。"
+
+#: includes/class-wc-beta-tester-admin-menus.php:143
+#, php-format
+msgid "%1$s: by %2$s - %3$s - %4$s\n"
+msgstr "%1$s: 開發者為 %2$s - %3$s - %4$s\n"
+
+#. translators: %s: woocommerce version
+#: includes/class-wc-beta-tester-admin-menus.php:246
+#, php-format
+msgid "[WC Beta Tester] Bug report for version \"%s\""
+msgstr "[WC Beta Tester] %s 版程式碼錯誤報告"
+
+#: includes/class-wc-beta-tester-admin-menus.php:272
+#: includes/class-wc-beta-tester-channel.php:126
+msgid "WC Beta Tester"
+msgstr "WooCommerce Beta Tester"
+
+#: includes/class-wc-beta-tester-admin-menus.php:279
+msgid "Beta"
+msgstr "Beta 版"
+
+#: includes/class-wc-beta-tester-admin-menus.php:282
+msgid "Release Candidate"
+msgstr "發行候選版本"
+
+#: includes/class-wc-beta-tester-admin-menus.php:285
+msgid "Stable"
+msgstr "穩定版"
+
+#. translators: %s: current channel
+#: includes/class-wc-beta-tester-admin-menus.php:294
+#, php-format
+msgid "Channel: %s"
+msgstr "頻道: %s"
+
+#: includes/class-wc-beta-tester-admin-menus.php:300
+msgid "Import/Export Settings"
+msgstr "匯入/匯出設定"
+
+#. translators: %s: current version
+#. translators: %s: version number
+#: includes/class-wc-beta-tester-admin-menus.php:307
+#: includes/class-wc-beta-tester-admin-menus.php:362
+#, php-format
+msgid "Release %s information"
+msgstr "%s 版發佈版本資訊"
+
+#: includes/class-wc-beta-tester-admin-menus.php:313
+#: includes/class-wc-beta-tester.php:457
+msgid "Switch versions"
+msgstr "切換版本"
+
+#: includes/class-wc-beta-tester-admin-menus.php:319
+msgid "Submit bug report"
+msgstr "傳送程式碼錯誤報告"
+
+#: includes/class-wc-beta-tester-admin-menus.php:366
+#: includes/class-wc-beta-tester-version-picker.php:200
+msgid "Close modal panel"
+msgstr "關閉強制回應面板"
+
+#: includes/class-wc-beta-tester-admin-menus.php:375
+msgid "Read more on GitHub"
+msgstr "前往 GitHub 進一步了解"
+
+#: includes/class-wc-beta-tester-channel.php:31
+#: includes/class-wc-beta-tester.php:462
+msgid "Settings"
+msgstr "設定"
+
+#: includes/class-wc-beta-tester-channel.php:38
+msgid "Release Channel"
+msgstr "版本頻道"
+
+#: includes/class-wc-beta-tester-channel.php:49
+msgid "Automatic Updates"
+msgstr "自動更新"
+
+#: includes/class-wc-beta-tester-channel.php:66
+msgid ""
+"The following settings allow you to choose which WooCommerce updates to "
+"receive on this site, including beta and RC versions not quite ready for "
+"production deployment."
+msgstr ""
+"以下設定能讓網站管裡員選取要接收哪個版本頻道的 WooCommerce 更新，包含不建議使"
+"用於正式網站的 Beta 版及發行候選版本。"
+
+#: includes/class-wc-beta-tester-channel.php:79
+msgid "Beta Releases"
+msgstr "Beta 版本"
+
+#: includes/class-wc-beta-tester-channel.php:80
+msgid ""
+"Beta releases contain experimental functionality for testing purposes only. "
+"This channel will also include RC and stable releases if more current."
+msgstr ""
+"Beta 版發佈版本包含僅供測試用途的實驗性功能。這個頻道同時也包含發行候選版本及"
+"穩定版本，因此是可選擇版本最多的頻道。"
+
+#: includes/class-wc-beta-tester-channel.php:83
+msgid "Release Candidates"
+msgstr "發行候選版本"
+
+#: includes/class-wc-beta-tester-channel.php:84
+msgid ""
+"Release candidates are released to ensure any critical problems have not "
+"gone undetected. This channel will also include stable releases if more "
+"current."
+msgstr ""
+"發行候選版本的發佈是為了確認是否還有未偵測到的嚴重問題。這個頻道同時也包含穩"
+"定版本，因此是可選擇版本次多的頻道。"
+
+#: includes/class-wc-beta-tester-channel.php:87
+msgid "Stable Releases"
+msgstr "穩定版本"
+
+#: includes/class-wc-beta-tester-channel.php:88
+msgid "This is the default behavior in WordPress."
+msgstr "WordPress 預設檢查版本更新的穩定版本頻道。"
+
+#: includes/class-wc-beta-tester-channel.php:91
+msgid "Update Channel"
+msgstr "更新頻道"
+
+#: includes/class-wc-beta-tester-channel.php:117
+msgid ""
+"If enabled, WooCommerce will update to the latest release in the background. "
+"Use with caution; we do not recommend using this on production stores!"
+msgstr ""
+"啟用這項功能後，WooCommerce 會在背景自動更新至最新版本 (啟用前請審慎評估，不"
+"建議在正式網站使用這項功能)"
+
+#. Plugin Name of the plugin/theme
+#: includes/class-wc-beta-tester-channel.php:126
+#: includes/views/html-admin-missing-woocommerce.php:16
+msgid "WooCommerce Beta Tester"
+msgstr "WooCommerce Beta Tester"
+
+#: includes/class-wc-beta-tester-channel.php:140
+msgid "Settings Saved"
+msgstr "設定已儲存。"
+
+#: includes/class-wc-beta-tester-import-export.php:64
+msgid "WC Beta Tester Import/Export"
+msgstr "WooCommerce Beta Tester 匯入/匯出"
+
+#: includes/class-wc-beta-tester-import-export.php:64
+msgid "WC Import/Export"
+msgstr "WooCommerce 匯入/匯出"
+
+#: includes/class-wc-beta-tester-import-export.php:91
+msgid ""
+"Export your WooCommerce Settings. The export file should not contain any "
+"fields that identify your site or reveal secrets (eg. API keys)."
+msgstr ""
+"匯出這個網站的 WooCommerce 設定。匯出檔不應該包含任何能識別這個網站或洩露機密"
+"的欄位 (例如 API 金鑰)。"
+
+#: includes/class-wc-beta-tester-import-export.php:95
+msgid "Export WooCommerce Settings"
+msgstr "匯出 WooCommerce 設定"
+
+#: includes/class-wc-beta-tester-import-export.php:102
+msgid ""
+"Import WooCommerce Settings exported with this tool. Some settings like "
+"store address, payment gateways, etc. will need to be configured manually."
+msgstr ""
+"匯入由這個工具匯出的 WooCommerce 設定。某些設定需要手動組態，例如商店地址、付"
+"款入口等。"
+
+#: includes/class-wc-beta-tester-import-export.php:106
+msgid "Import WooCommerce Settings"
+msgstr "匯入 WooCommerce 設定"
+
+#: includes/class-wc-beta-tester-import-export.php:146
+msgid "Invalid submission"
+msgstr "無效的資料提交。"
+
+#: includes/class-wc-beta-tester-import-export.php:151
+#: includes/class-wc-beta-tester-import-export.php:158
+msgid "No file uploaded."
+msgstr "沒有上傳檔案。"
+
+#: includes/class-wc-beta-tester-import-export.php:163
+msgid "File could not be read."
+msgstr "無法讀取檔案。"
+
+#: includes/class-wc-beta-tester-import-export.php:182
+msgid "Settings Imported"
+msgstr "設定已匯入。"
+
+#: includes/class-wc-beta-tester-import-export.php:184
+msgid "File did not contain well formed JSON."
+msgstr "檔案中並未包含格式正確的 JSON 資料。"
+
+#: includes/class-wc-beta-tester-live-branches-installer.php:41
+msgid "WooCommerce Beta Tester: No File System access"
+msgstr "WooCommerce Beta Tester: 沒有檔案系統存取權限"
+
+#: includes/class-wc-beta-tester-live-branches-installer.php:87
+#, php-format
+msgid "Error Downloading: <a href=\"%1$s\">%1$s</a> - Error: %2$s"
+msgstr "下載時發生錯誤: <a href=\"%1$s\">%1$s</a> - 錯誤: %2$s"
+
+#: includes/class-wc-beta-tester-live-branches-installer.php:103
+#, php-format
+msgid "Error Unzipping file: Error: %1$s"
+msgstr "解壓縮檔案時發生錯誤: 錯誤: %1$s"
+
+#: includes/class-wc-beta-tester-live-branches.php:75
+msgid "Live Branches"
+msgstr "即時分支"
+
+#: includes/class-wc-beta-tester-version-picker.php:42
+msgid "Action failed. Please refresh the page and retry."
+msgstr "操作失敗。請重新整理頁面並重試。"
+
+#: includes/class-wc-beta-tester-version-picker.php:75
+msgid "Update failed"
+msgstr "更新失敗"
+
+#. translators: 1: plugin name, 2: error message.
+#: includes/class-wc-beta-tester-version-picker.php:86
+#, php-format
+msgid "%1$s could not be updated (%2$s)."
+msgstr "%1$s 無法進行更新 (%2$s)。"
+
+#: includes/class-wc-beta-tester-version-picker.php:107
+#: includes/class-wc-beta-tester-version-picker.php:108
+msgid "WooCommerce Version Switch"
+msgstr "WooCommerce 版本切換"
+
+#. translators: %s: WooCoomerce version
+#: includes/class-wc-beta-tester-version-picker.php:136
+#, php-format
+msgid "Successfully switched version to %s."
+msgstr "已成功切換至 WooCommerce %s 版。"
+
+#: includes/class-wc-beta-tester-version-picker.php:151
+msgid "&nbsp;Installed Version"
+msgstr "&nbsp;(目前安裝的版本)"
+
+#: includes/class-wc-beta-tester-version-picker.php:177
+msgid "Available WooCommerce Releases"
+msgstr "可供下載安裝的 WooCommerce 發佈版本"
+
+#: includes/class-wc-beta-tester-version-picker.php:183
+#: includes/class-wc-beta-tester-version-picker.php:225
+msgid "Switch version"
+msgstr "切換版本"
+
+#: includes/class-wc-beta-tester-version-picker.php:196
+msgid "Are you sure you want to switch the version of WooCommerce plugin?"
+msgstr "確定要切換至 WooCommerce 指定版本？"
+
+#: includes/class-wc-beta-tester-version-picker.php:209
+msgid "Installed Version:"
+msgstr "目前安裝的版本:"
+
+#: includes/class-wc-beta-tester-version-picker.php:215
+msgid "New Version:"
+msgstr "切換目標版本:"
+
+#: includes/class-wc-beta-tester-version-picker.php:222
+msgid ""
+"Notice: We strongly recommend you perform the test on a staging site and "
+"create a complete backup of your WordPress files and database prior to "
+"performing a version switch. We are not responsible for any misuse, "
+"deletions, white screens, fatal errors, or any other issue arising from "
+"using this plugin."
+msgstr ""
+"請注意，強烈建議網站管理員僅在測試用網站中執行這項功能，並在切換版本前先為 "
+"WordPress 網站的檔案及資料庫進行完整備份。我們不對任何錯用、誤刪、空白畫面、"
+"嚴重錯誤或使用這個外掛引起的任何問題負責。"
+
+#: includes/class-wc-beta-tester-version-picker.php:226
+msgid "Cancel"
+msgstr "取消"
+
+#: includes/class-wc-beta-tester.php:291
+msgid "<h1><span>&#9888;</span>This is a beta release<span>&#9888;</span></h1>"
+msgstr ""
+"<h1><span>&#9888;</span>目前使用的是 Beta 測試版<span>&#9888;</span></h1>"
+
+#: includes/class-wc-beta-tester.php:295
+msgid ""
+"<h1><span>&#9888;</span>This is a pre-release version<span>&#9888;</span></"
+"h1>"
+msgstr ""
+"<h1><span>&#9888;</span>目前使用的是發行候選版本<span>&#9888;</span></h1>"
+
+#: includes/class-wc-beta-tester.php:303
+msgid "Read the changelog and find out more about the release on GitHub."
+msgstr "查看變更記錄及前往 GitHub 進一步了解發佈版本"
+
+#: includes/views/html-admin-missing-woocommerce.php:16
+#, php-format
+msgid ""
+"%s requires WooCommerce to be installed and activated in order to serve "
+"updates."
+msgstr "安裝並啟用 WooCommerce 後，%s 才能進行更新。"
+
+#: includes/views/html-admin-missing-woocommerce.php:26
+msgid "Activate WooCommerce"
+msgstr "啟用 WooCommerce"
+
+#: includes/views/html-admin-missing-woocommerce.php:29
+#: includes/views/html-admin-missing-woocommerce.php:43
+msgid "Turn off Beta Tester plugin"
+msgstr "停用 WooCommerce Beta Tester"
+
+#: includes/views/html-admin-missing-woocommerce.php:41
+msgid "Install WooCommerce"
+msgstr "安裝 WooCommerce"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/woocommerce/woocommerce-beta-tester"
+msgstr "https://github.com/woocommerce/woocommerce-beta-tester"
+
+#. Description of the plugin/theme
+msgid ""
+"Run bleeding edge versions of WooCommerce. This will replace your installed "
+"version of WooCommerce with the latest tagged release - use with caution, "
+"and not on production sites."
+msgstr ""
+"升級並執行最新的 WooCommerce 測試版本。這個外掛能將目前裝的正式穩定版本更新為"
+"最新的測試版本，更新前請審慎評估，不建議在正式網站使用這項功能。"
+
+#. Author of the plugin/theme
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#. Author URI of the plugin/theme
+msgid "http://woocommerce.com/"
+msgstr "https://woocommerce.com/"

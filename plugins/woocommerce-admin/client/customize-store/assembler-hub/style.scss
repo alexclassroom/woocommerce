@@ -286,13 +286,16 @@
 	}
 
 	.woocommerce-customize-store__sidebar-logo-container {
-		margin: 12px 0 32px;
 		padding: 32px;
 		cursor: pointer;
 		width: 324px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		.woocommerce-customize-store_custom-logo {
-			width: 100%;
+			max-width: 250px;
+			max-height: 250px;
 		}
 	}
 
@@ -688,5 +691,13 @@
 		margin-left: 10px;
 		width: max-content;
 		box-shadow: none;
+	}
+}
+
+.woocommerce-customize-store {
+	.block-editor-color-gradient-control {
+		.components-circular-option-picker {
+			display: none;
+		}
 	}
 }
